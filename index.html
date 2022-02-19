@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Yanone+Kaffeesatz:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CV</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__items">
+          <div class="name">Dastan</div>
+          <ul class="navbar__list">
+            <li>About me</li>
+            <li>Experience</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>CV</li>
+          </ul>
+
+          <img class="burger_menu" src="./image/menu.svg" alt="burger menu" />
+        </div>
+      </div>
+    </nav>
+    <!-- ESC NAVBAR -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header__items">
+          <div class="header__heading">
+            Front-end Developer, Google Ex-Tech Lead
+          </div>
+
+          <div class="header__text">
+            Mission-driven front-end developer with a passion for thoughtful UI
+            design, collaboration, and teaching.
+          </div>
+          <img src="./image/icon.jpg" alt="" class="header__icon" />
+
+          <div class="header__adress">
+            <div class="adress__phone">
+              <div class="phone">Phone</div>
+              <div class="number">0706-79-44-11</div>
+            </div>
+            <div class="adress__email">
+              <div class="email">Email</div>
+              <div class="email2">daskov2412@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ESC HEADER -->
+
+    <div class="intro__background">
+      <div class="intro">
+        <div class="container">
+          <div class="intro__items">
+            <div class="intro__heading">
+              Hi, <strong>I’m Dastan</strong> Nice to meet you.
+            </div>
+            <div class="intro__subtitle">
+              Artificial intelligence (AI), sometimes called machine
+              intelligence, is intelligence demonstrated by machines, unlike the
+              natural intelligence displayed by humans and animals. Leading AI
+              textbooks define the field as the study of "intelligent agents":
+              any device that perceives its environment and takes actions that
+              maximize its chance of successfully achieving its goals.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESC HEADER -->
+
+    <div class="content">
+      <div class="container">
+        <div class="content__header">Experience</div>
+        <div class="content__items">
+          <div class="content__left">
+            <div class="conitem__left" data-aos="fade-right">
+              <div class="left__heading">2010 - Present</div>
+              <div class="left__text">FULL STACK DEVELOPER</div>
+            </div>
+            <div class="conitem__left" data-aos="fade-right">
+              <div class="left__heading">2008 - 2010</div>
+              <div class="left__text">FULL STACK DEVELOPER</div>
+            </div>
+            <div class="conitem__left" data-aos="fade-right">
+              <div class="left__heading">2004 - 2008</div>
+              <div class="left__text">FULL STACK DEVELOPER</div>
+            </div>
+          </div>
+
+          <div class="content__right">
+            <div class="conitem__right" data-aos="fade-left">
+              <div class="right__heading">Wix</div>
+              <p class="right__subtitle">
+                Duis aute irure dolor in reprehenderit in vol patate velit esse
+                cillum dolore eu fugiat nulla pari. Excepteur sint occana inna
+                tecat cupidatat non proident.
+              </p>
+            </div>
+            <div class="conitem__right" data-aos="fade-left">
+              <div class="right__heading">Google</div>
+              <p class="right__subtitle">
+                Duis aute irure dolor in reprehenderit in vol patate velit esse
+                cillum dolore eu fugiat nulla pari. Excepteur sint occana inna
+                tecat cupidatat non proident.
+              </p>
+            </div>
+            <div class="conitem__right" data-aos="fade-left">
+              <div class="right__heading">Facebook</div>
+              <p class="right__subtitle">
+                Duis aute irure dolor in reprehenderit in vol patate velit esse
+                cillum dolore eu fugiat nulla pari. Excepteur sint occana inna
+                tecat cupidatat non proident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESCAPE INTRO -->
+
+    <!-- SKILLS -->
+
+    <div class="skills">
+      <div class="container">
+        <div class="skills__header">SKILLS</div>
+
+        <div class="skills__items">
+          <div class="skill__items">
+            <div class="skill_header">CSS</div>
+            <div class="css progress__bar"></div>
+          </div>
+          <div class="skill__items">
+            <div class="skill_header">HTML</div>
+            <div class="css progress__bar"></div>
+          </div>
+          <div class="skill__items">
+            <div class="skill_header">TEAM LEADING</div>
+            <div class="css progress__bar"></div>
+          </div>
+          <div class="skill__items">
+            <div class="skill_header">BOOTSTRAP</div>
+            <div class="css progress__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <a class="download__link" href="#">DOWNLOAD</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const progressBar = document.querySelectorAll(".progress__bar");
+
+      progressBar.forEach((item) => {
+        window.addEventListener("scroll", function () {
+          if (this.pageYOffset + window.innerHeight >= item.offsetTop) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
